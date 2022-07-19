@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dockerize flask app</title>
+</head>
+<body>
+    <h1> Instrucciones De Uso: </h1>
+    <table>
+            <tr>
+                <th>CA</th>
+                <th>URL</th>
+                <th>Palabra</th>
+            </tr>        
+            <tr>
+                <td>CA1</td>
+                <td>http://localhost:5000/users/newUser?name=edgar&age=24</td>
+                <td>name={CambiarPalabra}, age={CambiarEdad}</td>
+            </tr>
+            <tr>
+                <td>CA2</td>
+                <td>http://localhost:5000/users/consulta?name=edgar&token=Prueba</td>
+                <td>name={CambiarPalabra}, age={CambiarEdad}</td>
+            </tr>
+            <tr>
+                <td>CA3</td>
+                <td>http://localhost:5000/users/consulta?name=edgar&token=Prueba</td>
+                <td>name={CambiarPalabra}, age={CambiarEdad}</td>
+            </tr>
+    </table>
+    <table>
+        <tr>
+            <form action = "http://localhost:5000/users/newUser" method = "get">
+                <p>CA1</p>
+                <p>Enter Name User:</p>
+                <p><input type = "text" name = "name" /> Ingrese nombre del Usuario</p>
+                <p>Enter Age User:</p>
+                <p><input type = "text" name = "age" /> Ingrese edad del Usuario</p>
+                <p><input type = "submit" value = "submit" /></p>
+            </form>
+        </tr>
+        <tr>
+            <form action = "http://localhost:5000/users/consult" method = "get">
+                <p>CA2</p>
+                <p>Enter Name User:</p>
+                <p><input type = "text" name = "name" /> Ingrese nombre del Usuario</p>
+                <p>Enter Age User:</p>
+                <p><input type = "text" name = "age" /> Ingrese edad del Usuario</p>
+                <p><input type = "submit" value = "submit" /></p>
+            </form>
+        </tr>
+    </table>
+</body>
+</html>
